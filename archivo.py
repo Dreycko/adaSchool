@@ -27,8 +27,12 @@ concatenacion = cadena + " " + str(entero) + " " + str(flotante) + " " + str(boo
 # 1.7976931348623157e+308
 
 # Suma de los primeros n números pares
-n = 10
-suma = (n * (n + 1)) / 2
+n = 100  # Cambia el valor de "n" según lo que quieras 
+suma = 0
+
+for i in range(2, n + 1, 2):
+    suma += i
+print("La suma de los números pares del 1 al", n, "es:", suma)
 
 # Impresión de resultados
 print(concatenacion)
